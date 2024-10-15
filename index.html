@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            background-image: url(/anh/images1.png); /* Thay URL này bằng đường dẫn hình nền của bạn */
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .container {
+            margin-top: 100px;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: inline-block;
+            padding: 30px;
+            border-radius: 15px;
+        }
+        .message {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .highlight-image {
+            width: 80%;
+            max-width: 500px;
+            border-radius: 15px;
+            border: 5px solid #ff9800;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin: 20px auto;
+        }
+        .button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #e68a00;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <img src="anh/images1.png" alt="Hình ảnh chúc mừng" class="highlight-image">
+        <div class="message">Chúc mừng bạn đã qua môn mặc dù bạn như c nhưng vẫn chúc mừng bạn !</div>
+        <button class="button" onclick="alert('Tiếp tục cố gắng nhé!')">Nhấn vào đây</button>
+    </div>
+</body>
+</html>
